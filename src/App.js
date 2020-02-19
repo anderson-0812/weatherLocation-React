@@ -22,7 +22,7 @@ function App() {
         </a>
       </header>
       {/* llamamos nuestro componente  */}
-      <WeatherLocation/>
+      <WeatherLocation></WeatherLocation>
     </div>
   );
 }
