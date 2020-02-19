@@ -1,6 +1,8 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+// importamos nuestro componente
+import WeatherLocation from './components/WeatherLocation'
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
           Learn React
         </a>
       </header>
+      {/* llamamos nuestro componente  */}
+      <WeatherLocation/>
     </div>
   );
 }
