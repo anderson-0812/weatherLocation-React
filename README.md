@@ -73,3 +73,7 @@ vscode icons
 reactjs code
 ### Weathers Icons
 https://erikflowers.github.io/weather-icons/
+
+### CDN son los content de librinetwork proveen contenido evita descargar librerias
+https://cdnjs.com/libraries/weather-icons
+

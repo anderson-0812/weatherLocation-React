@@ -1,11 +1,24 @@
 import React from'react'
 import WeatherIcons from 'react-weathericons'
+// importo de una a una para soloimportar lo que necesito
+import {
+    CLOUD,
+    CLOUDY,
+    SUN,
+    RAIN,
+    SNOW,
+    WINDY,
+} from './../constants/weathers'
 
 const icons = {
-    sunny: 'day-sunny',
-    fog: 'day-fog',
+    [CLOUD]:"cloud",
+    [CLOUDY]:"cloudy",
+    [SUN]:"day-sunny",
+    [RAIN]:"rain",
+    [SNOW]:"snow",
+    [WINDY]:"windy",
 
-}
+};
 // de lo que me envie weatherState es sera el icono si no hay nada x defectos era day-sunny
 const getWeatherIcon = (weatherState) => {
     const icon = icons[weatherState];
