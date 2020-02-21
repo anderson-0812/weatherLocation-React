@@ -11,6 +11,7 @@ import {
     SNOW,
     WINDY,
 } from './../../../constants/weathers'
+import './style.css';
 
 const icons = {
     [CLOUD]:"cloud",
@@ -24,20 +25,21 @@ const icons = {
 // de lo que me envie weatherState es sera el icono si no hay nada x defectos era day-sunny
 const getWeatherIcon = (weatherState) => {
     const icon = icons[weatherState];
-
+    const sizeIcon = '4x';
     if (icon)
-        return <WeatherIcons name={icon} size="2x" />
+        return <WeatherIcons className="wicon" name={icon} size={sizeIcon} />
     else
-        return <WeatherIcons name={'day-sunny'} size="2x" />
+        return <WeatherIcons className="wicon" name={'day-sunny'} size={sizeIcon} />
 }
 
 // Armo el componente l=con el icono adecuado llamando a la funcion getWeatherIcon
 const WeatherTempeture = ({tempeture, weatherState}) => (
-    <div>
+    <div className='weatherTempetureCont'>
         {
             getWeatherIcon(weatherState)
         }
-        <span>{`${tempeture}C*`}</span>
+        <span className ='tempeture' >{`${tempeture}`}</span> 
+        <span className = 'tempetureType'>{`C*`}</span>
     </div>
 );
 
