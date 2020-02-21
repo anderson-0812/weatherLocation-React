@@ -1,5 +1,7 @@
 import React from'react'
 import WeatherIcons from 'react-weathericons'
+// para validaciones de tipos de datos lo ahcemos con PropTypes
+import PropTypes from 'prop-types'
 // importo de una a una para soloimportar lo que necesito
 import {
     CLOUD,
@@ -38,5 +40,11 @@ const WeatherTempeture = ({tempeture, weatherState}) => (
         <span>{`${tempeture}C*`}</span>
     </div>
 );
+
+// creamos la validacion PropTypes
+WeatherTempeture.propTypes = {
+    tempeture: PropTypes.number.isRequired,
+    weatherState: PropTypes.string.isRequired
+}
 
 export default WeatherTempeture;

@@ -15,7 +15,7 @@ const WeatherData = () => (
     <div>
         <WeatherTempeture 
             tempeture = {20}
-            weatherState = {CLOUDY}
+            weatherState = {20}
             >
         </WeatherTempeture>
         <WeatherExtraInfo humidity = {80} wind={"10 m/s"}></WeatherExtraInfo>
