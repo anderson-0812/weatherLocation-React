@@ -1,5 +1,5 @@
 import React from 'react';
-
+import PropTypes from 'prop-types'
 const Location = (props) => {
     // Destructuring, cuando tenemos una propiedad con un 
     // nombre qu asiganmos a una variable o constante cpn mismo nombre lo asignamos directamente de la siguiente manera
@@ -12,4 +12,7 @@ const Location = (props) => {
     );
 };
 
+Location.propTypes = {
+    city: PropTypes.string.isRequired, // ptsr la abreviacion para escribir  toda la frase
+};
 export default Location;

@@ -71,6 +71,7 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 ### Extensiones vscode
 vscode icons
 reactjs code
+reactjs code snippets
 ### Weathers Icons
 https://erikflowers.github.io/weather-icons/
 
