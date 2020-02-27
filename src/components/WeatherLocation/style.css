@@ -1,0 +1,17 @@
+.LocationCont{
+    width: 100%;
+    height: 25px;
+    text-align: left;
+    color: #888;
+    line-height: 35px;
+}
+.LocationCont h1{
+    margin: 0;
+}
+.weatherLocationCont{
+    width: 400px;
+    padding: 25px;
+    font-family: 'Roboto','sans-serif';
+    /* dar sombra */
+    box-shadow: 10px 10px 40px -12px rgba(0, 0, 0, 0.75);
+}

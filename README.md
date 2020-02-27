@@ -78,3 +78,8 @@ https://erikflowers.github.io/weather-icons/
 ### CDN son los content de librinetwork proveen contenido evita descargar librerias
 https://cdnjs.com/libraries/weather-icons
 
+### fonts
+https://fonts.google.com/specimen/Roboto
+
+### herramientas de maquetado css para poder probar distintos diseños css
+https://www.cssmatic.com/

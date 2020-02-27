@@ -12,16 +12,17 @@ import {
 } from './../../../constants/weathers'
 
 import './style.css';
-
-const WeatherData = () => (
-    <div className='weatherDataCont'>
+// destructuring con objetos complejos {tempeture, weatherState, humidity, wind}
+const WeatherData = ({ data: {tempeture, weatherState, humidity, wind} }) => {
+    // const {tempeture, weatherState, humidity, wind} = data;
+    return (<div className='weatherDataCont'>
         <WeatherTempeture
-            tempeture = {20}
-            weatherState = {CLOUDY}
+            tempeture = {tempeture}
+            weatherState = {weatherState}
             >
         </WeatherTempeture>
-        <WeatherExtraInfo humidity = {80} wind={"10 m/s"}></WeatherExtraInfo>
-    </div>
-);
+        <WeatherExtraInfo humidity = {humidity} wind={wind}></WeatherExtraInfo>
+    </div>);
+};
 
 export default WeatherData;
