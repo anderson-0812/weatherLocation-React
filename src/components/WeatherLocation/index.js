@@ -1,4 +1,4 @@
-import React from 'react'; // Siempre se importa reac
+import React, { Component } from 'react'; // Siempre se importa reac
 //  Importamos oitro componente que creamos
 import Location from './Location'
 // en una importacion solo conelnombre de carpeta automaticamente busca el idex.js 
@@ -14,6 +14,7 @@ import {
     WINDY,
 } from './../../constants/weathers'
 import './style.css'
+// import { Component } from 'react';
 
 const data = {
     tempeture: 5,
@@ -22,12 +23,17 @@ const data = {
     wind: '10m/s',
 }
 
-const WeatherLocation = () => (
-    <div className='weatherLocationCont'>
-        <h2> <Location city={"Loja - Ecuador"}></Location> </h2> 
-        <WeatherData data = {data}></WeatherData>
-    </div>
-);
+class WeatherLocation extends Component {
+    render(){
+        return(
+        <div className='weatherLocationCont'>
+            <h2> <Location city={"Loja - Ecuador"}></Location> </h2> 
+         <WeatherData data = {data}></WeatherData>
+        </div>
+
+        );
+    }
+};
 
 // Siempre se exporta el componente
 export default WeatherLocation;
