@@ -6,11 +6,11 @@ import Location from './Location'
 import WeatherData from './WeatherData'
 // importo de una a una para soloimportar lo que necesito
 import {
-    CLOUD,
-    CLOUDY,
+    // CLOUD,
+    // CLOUDY,
     SUN,
-    RAIN,
-    SNOW,
+    // RAIN,
+    // SNOW,
     WINDY,
 } from './../../constants/weathers'
 import './style.css'
@@ -22,13 +22,40 @@ const data = {
     humidity: 10,
     wind: '10m/s',
 }
+const data2 = {
+    tempeture: 25,
+    weatherState: WINDY,
+    humidity: 80,
+    wind: '19m/s',
+}
 
 class WeatherLocation extends Component {
+
+    constructor(){
+        super();// es el costructor de nuestro componente base Component
+        this.state = {
+            city: 'Loja - Ecuador',
+            data: data,
+        }
+    }
+
+    handleUpdateClick = () =>{
+        // alert('actualizado');
+        console.log('actualizado');
+        console.log(data2);
+        // siempre se ocupa setState para actualizar el estado
+        this.setState({
+            city: 'Cuenca',
+            data: data2
+        });
+    };
     render(){
+        const {city, data} = this.state;
         return(
         <div className='weatherLocationCont'>
-            <h2> <Location city={"Loja - Ecuador"}></Location> </h2> 
+            <h2> <Location city={city}></Location> </h2> 
          <WeatherData data = {data}></WeatherData>
+         <button onClick = { this.handleUpdateClick } >Actualizar</button>
         </div>
 
         );

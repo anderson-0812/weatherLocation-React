@@ -3,14 +3,14 @@ import WeatherExtraInfo from './WeatherExtraInfo'
 import WeatherTempeture from './WeatherTempeture'
 import PropTypes from 'prop-types';
 // importo de una a una para soloimportar lo que necesito
-import {
-    CLOUD,
-    CLOUDY,
-    SUN,
-    RAIN,
-    SNOW,
-    WINDY,
-} from './../../../constants/weathers'
+// import {
+//     CLOUD,
+//     CLOUDY,
+//     SUN,
+//     RAIN,
+//     SNOW,
+//     WINDY,
+// } from './../../../constants/weathers'
 
 import './style.css';
 // destructuring con objetos complejos {tempeture, weatherState, humidity, wind}
